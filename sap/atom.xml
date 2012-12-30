@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Seq &amp; Par</title>
+ <link href="http://users.ices.utexas.edu/~hari/sap/atom.xml" rel="self"/>
+ <link href="http://users.ices.utexas.edu/~hari/sap/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://users.ices.utexas.edu/~hari/sap/</id>
+ <author>
+   <name>Hari Sundar</name>
+   <email>hari@ices.utexas.edu</email>
+ </author>
+ 
+ {% for post in site.categories.sap limit:5 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://http://users.ices.utexas.edu/~hari{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>id:{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
