@@ -10,13 +10,12 @@ keywords: Blog, Programming, Algorithms
 Lab Notes
 =========
 
-Programming is all about _structure_ and _process_ and this blog is all about
-[Hari Sundar](/)'s adventures in programming. Enjoy!
+These are my lab notes about sequential and parallel algorithms and programming them. 
 
-[![Feed icon](/files/css/feed-icon-14x14.png){:title="Atom feed of recent posts" .right}][feed]
+[![Feed icon](/~hari/files/css/feed-icon-14x14.png){:title="Atom feed of recent posts" .right}][feed]
 A [feed][] of the most recent posts is available.
 
-[feed]: /sap/atom.xml
+[feed]: /~hari/sap/atom.xml
 
 Recent Posts
 ------------
@@ -25,8 +24,8 @@ Recent Posts
 <div class="section list">
   <h1>{{ post.date | date_to_string }}</h1>
   <p class="line">
-  <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-  <a class="comments" href="{{ post.url }}#disqus_thread">View Comments</a>
+  <a class="title" href="/~hari/{{ post.url }}">{{ post.title }}</a>
+  <a class="comments" href="/~hari/{{ post.url }}#disqus_thread">View Comments</a>
   </p>
   <p class="excerpt">{{ post.excerpt }}</p>
 </div>

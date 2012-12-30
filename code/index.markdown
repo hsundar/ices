@@ -4,7 +4,7 @@ section: Code
 title: Code
 ---
 
-<img class='inset right' src='/images/hari.png' title='Hari Sundar' alt='hs' width='140px' />
+<img class='inset right' src='/~hari/images/hari.png' title='Hari Sundar' alt='hs' width='140px' />
 
 Code
 ====
@@ -24,10 +24,10 @@ Parallel
 <div class="section" markdown="1">
 Matlab
 ========	
-[High-order Multigrid](/code/homg)
+[High-order Multigrid](/~hari/code/homg)
 : A geometric multigrid framework built using Matlab that supports high-order discretizations on 2D/3D hexahedral meshes. 
 
-[Cardiac Electrophysiology](/code/ep)
+[Cardiac Electrophysiology](/~hari/code/ep)
 : A simple implementation of the bidomain equations coupled with the Luo-Rudy model for cellular activation. Implemented in Matlab using the psuedospectral method.
  
 </div>	
@@ -35,18 +35,18 @@ Matlab
 <div class="section" markdown="1">
 Demos
 =====
-[Quadtree Coloring](/code/coloring/)
+[Quadtree Coloring](/~hari/code/coloring/)
 :	This JavaScript demo allows you to generate (balanced) quadtrees from points, and color the resulting quadtree using different coloring algorithms.
 </div>
 
 <div class="section" markdown="1">
 Tools
 =====
-[dcmConvert](/code/dcmConvert.html)
+[dcmConvert](/~hari/code/dcmConvert.html)
 :	This is a simple Qt application that converts DICOM images to analyze/MetaIO formats. It allows for stacking of 3D and 4D images.
 
 
-[Mark Tags](/code/mark-tags.html)
+[Mark Tags](/~hari/code/mark-tags.html)
 : This is a simple Qt application that allows (dicom/analyze) images to be annotated with points. Initial goal was to mark tags in tagged cardiac MR images. 	
 
 </div>
