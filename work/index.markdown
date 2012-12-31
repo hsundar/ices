@@ -9,15 +9,42 @@ section: Work
 Research
 ========
 
-Here are brief descriptions of my current areas of research. A selected list of publications is available [here](/~hari/work/pubs) and a complete list can be found on [Google Scholar](http://scholar.google.com/citations?user=equOxc0AAAAJ).
+Here are brief descriptions of my current areas of research. A selected list of publications is available [here](/~hari/work/pubs) and a complete list can be found on [Google Scholar](http://scholar.google.com/citations?user=equOxc0AAAAJ). 
 
++-- {.section}
+Octrees
+=======
+
+My dissertation research on algorithms for constructing and balancing octrees in parallel. Algorithms for fast meshing based on octrees from points and image data were also developed. The mesh is used for solving PDEs on using the finite element method. This work has been extended to include multigrid solvers and is [freely available](/~hari/code/). The work has also been extended to include complex geometries as a forest of octrees ([p4est](http://www.p4est.org/)). 
+
+_Related talks & posts_
+{% for post in site.tags.octree %}
+<ul class="compact recent">
+<li>
+	<a href="/~hari/{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }}</a>
+	<span class="date">{{ post.date | date_to_string }}</span> 
+</li>
+</ul>
+{% endfor %}
+
+=--
 
 +-- {.section}
 Multigrid
 =========
 <img class='inset top' src='/~hari/images/multigrid.png' title='Grid Hierarchy' alt='Grid hierarchy' width='480px' />
 
-In this article we present a parallel geometric multigrid (GMG) method for solving variable-coefficient elliptic partial differential equations on arbitrary geometries using highly unstructured forests of octrees. The forest is an unstructured mesh of warped cuboids, each of which is further refined as an octree, enabling us to generate conforming meshes for highly warped geometries while retaining high levels of local refinement. We use algebraic multigrid (AMG) as the coarse grid solver for GMG, giving us ability to adjust the number of GMG and AMG levels based on the application. We present numerical experiments for the 3D variable-coefficient Poisson problem that demonstrates the scalability of our method. Our largest run was a highly non-uniform mesh of the earth's mantle, with 80-Billion unknowns using 262,144 cores on NCCS's Jaguar.
+My current research involved developing parallel geometric multigrid (GMG) methods for solving variable-coefficient elliptic partial differential equations on arbitrary geometries using highly unstructured forests of octrees. We use algebraic multigrid (AMG) as the coarse grid solver for GMG, giving us ability to adjust the number of GMG and AMG levels based on the application. Numerical experiments for the 3D variable-coefficient Poisson problem demonstrate the scalability of our method and our largest run was a highly non-uniform mesh of the earth's mantle, with 80-Billion unknowns using 262,144 cores on NCCS's Jaguar. I am currently working on extending this to support **higher-order** discretizations.
+
+_Related talks & posts_
+{% for post in site.tags.multigrid %}
+<ul class="compact recent">
+<li>
+	<a href="/~hari/{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }}</a>
+	<span class="date">{{ post.date | date_to_string }}</span> 
+</li>
+</ul>
+{% endfor %}
 
 =--
 
@@ -25,7 +52,8 @@ In this article we present a parallel geometric multigrid (GMG) method for solvi
 Sorting
 =======
 
-describe sort work
+Sorting is one of the most fundamental algorithms in computer science. It is also an essential building block for developing scalable parallel algorithms.
+
 =--
 
 +-- {.section}

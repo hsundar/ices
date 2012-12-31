@@ -38,8 +38,7 @@ Some of my recent and upcoming [talks](/~hari/talks).
 +-- {.section}
 Blogs
 =====
-I maintain a research blog called _[Seq & Par](/~hari/sap)_ as a place for random musings.
-Recent posts include:
+I maintain a research blog called _[Seq & Par](/~hari/sap)_. Recent posts include:
 {% for post in site.categories.sap limit:3 %}
 <ul class="compact recent">
 <li>
