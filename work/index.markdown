@@ -63,20 +63,26 @@ Graph Algos
 
 __Relative Neighborhood Graphs__ We present a parallel algorithm for computing cycle orders and cycle perimeters in relative neighborhood graphs (Urquhart approximations) derived from histopathological image data. This algorithm would enable the study of correlations between macroscopic imaging biomarkers of prostate cancer and these important graph-theoretic microscopic biomarkers and may also allow the rapid automated Gleason scoring or cancer detection in prostate biopsy slides. Our algorithm consists of the following steps: (1) Uniform partitioning of the nuclei across processes, (2) Parallel Delaunay triangulation and (3) Parallel computation of the the RNG and the cycle orders and perimeters. We have evaluated our algorithm on a whole-mount histopathology slide obtained after radical prostatectomy. The single-process sequential version of our parallel algorithm offers a significant speed-up over a straightforward sequential algorithm and we demonstrate excellent fixed-size and isogranular parallel scalabity upto 384 processes.
 
-__Graph Coloring__ Take a look at the [javascript demo](/~hari/code/coloring). 
+__Graph Coloring__ is a form of graph labeling, wherein we wish to label(color) vertices such that no two adjacent vertices have the same color. It is of interest to my research due to its use in parallelization of algorithms such as the [Gauß-Seidel method](http://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method).
+I have a simple 2D [javascript demo](/~hari/code/coloring) exploring coloring issues on quadtrees. 
 
 =--
 
 +-- {.section}
 Imaging
 =======
-All the imaging stuff
+All the imaging stuff. __Mutual information__, __Mellin Stuff__, __2d3d Registration__
+
 =--
 
 +-- {.section}
 Biomechanics
 ============
-Thesis stuff
+
+My dissertation research involved the development of a method for the analysis of Magnetic Resonance (MR) cardiac images with the goal of reconstructing the motion of the myocardial tissue. The main feature of our method is that the inversion parameter field is the active contraction of the myocardial fibers. This is accomplished with a biophysically-constrained, four-dimensional (space plus time) formulation that aims to complement information that can be gathered from the images by _a priori_ knowledge of cardiac mechanics and electrophysiology. Incorporating biomechanical priors introduces major computational challenges, which constitute the main issue tackled by my dissertation research.
+
+Our main hypothesis is that by incorporating biophysical information, we can generate more informative priors and thus, more accurate predictions of the ventricular wall motion. In this thesis, we outline the formulation, discuss the computational methodology for solving the inverse motion estimation, and present results using synthetic and tagged MR data. We also present methods for generating and solving using a spatially non-uniform octree meshing scheme with an adjoint-based inversion solver. The overall method uses patient-specific MR data and fiber information to reconstruct the motion. Additional information is available on my [biomechanics](/~hari/work/biomech) page.
+
 =-- 
 
 +-- {.section}

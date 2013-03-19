@@ -70,20 +70,20 @@ Philadelphia, PA.
 </div>
 
 
-[thesis]: /files/pubs/thesis.pdf
+[thesis]: /~hari/files/pubs/thesis.pdf
 
-[tmi12]: /files/pubs/tmi12.pdf
-[jpi11]: /files/pubs/jpi11.pdf
-[pr09]: /files/pubs/pr09.pdf
-[sisc08]: /files/pubs/sisc08.pdf
+[tmi12]: /~hari/files/pubs/tmi12.pdf
+[jpi11]: /~hari/files/pubs/jpi11.pdf
+[pr09]: /~hari/files/pubs/pr09.pdf
+[sisc08]: /~hari/files/pubs/sisc08.pdf
 
-[sc07]: /files/pubs/sc07.pdf
-[sc08]: /files/pubs/sc08.pdf
-[sc10]: /files/pubs/sc10.pdf
-[sc12]: /files/pubs/sc12.pdf
+[sc07]: /~hari/files/pubs/sc07.pdf
+[sc08]: /~hari/files/pubs/sc08.pdf
+[sc10]: /~hari/files/pubs/sc10.pdf
+[sc12]: /~hari/files/pubs/sc12.pdf
 
-[cvpr10]: /files/pubs/cvpr10.pdf
+[cvpr10]: /~hari/files/pubs/cvpr10.pdf
 
-[miccai07]: /files/pubs/miccai07.pdf
-[miccai09a]: /files/pubs/miccai09a.pdf
-[miccai09b]: /files/pubs/miccai09b.pdf
+[miccai07]: /~hari/files/pubs/miccai07.pdf
+[miccai09a]: /~hari/files/pubs/miccai09a.pdf
+[miccai09b]: /~hari/files/pubs/miccai09b.pdf

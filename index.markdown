@@ -1,7 +1,7 @@
 ---
 layout: name
 title: Home
-
+keywords: Hari Sundar, parallel algorithms, inverse problems, medical imaging, octree, multigrid, interventional cardiology, biomechanics, biophysics, image-guided surgery, partial differential equations, supercomputing
 section: Home
 ---
 
@@ -13,8 +13,8 @@ I am a Researcher at the Institute for Computational Engineering & Sciences ([IC
 [Research](/~hari/work)
 ========
 
-My research focuses on inverse problems, distributed and parallel algorithms, and medical image-analysis. The main applications driving my work are in soft tissue and cardiovascular mechanics, computer vision & machine learning.
-
+My research focuses on inverse problems, distributed and parallel algorithms, and medical image-analysis. The main applications driving my work are in soft tissue and cardiovascular mechanics, computer vision and machine learning.
+&rarr; [Selected Publications](/~hari/work/pubs) | [Google Scholar](http://scholar.google.com/citations?user=equOxc0AAAAJ)
 =--
 
 +-- {.section}

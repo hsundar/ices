@@ -249,7 +249,7 @@ body#Work #header a.work,
 body#Home #header a.home, 
 body#Play #header a.play,
 body#Info #header a.info,
-body#Code #header a.code,
+body#Code #header a.*,
 body#Past #header a.past,
 body#Kith #header a.kith
 { 
@@ -335,13 +335,18 @@ p.excerpt { margin: 0; }
 /* @group Code */
 pre {
 	margin: 1em 0 1.5em 0;
-	font-size: 0.75em; /* Hack to make code look same size as body font */  
+	font-size: 0.85em; /* Hack to make code look same size as body font */  
 	line-height: 1.5em;	
-	color: #111;
-	background: #fffff0;
+	color: #111111;
+	background: #333333; /*#fffff0; */ 
 	border: 1px solid #ddc;
 	padding: 0.5em 1em;
 	overflow: hidden;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 
 	/* Experimental CSS3 stuff */
 	box-shadow: 1px 1px 6px #ccc;
@@ -354,7 +359,8 @@ pre:hover {
 }
 code {
 	font-size: 1em;
-	background-color: #f7f7ff;
+	color: darkorange;
+	background-color: white; /* #f7f7ff; */ 
 	line-height: 1.4em;
 }
 pre > code {
@@ -517,7 +523,7 @@ canvas
 #canvasContainer
 {
 	margin: auto;
-	width:1024px;
+	width:512px;
 	font-size: 16px;
 	margin-left: auto;
 	margin-right: auto;
@@ -543,4 +549,11 @@ canvas
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	
 	background-color:#FFFFFF;
+}
+
+.rounded-corners {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
 }

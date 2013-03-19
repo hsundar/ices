@@ -42,14 +42,20 @@ Demos
 <div class="section" markdown="1">
 Tools
 =====
-[dcmConvert](/~hari/code/dcmConvert.html)
-:	This is a simple Qt application that converts DICOM images to analyze/MetaIO formats. It allows for stacking of 3D and 4D images.
+[dcmConvert](/~hari/files/code/dicomConvert.v0.1.zip)
+:	This is a simple Qt application that converts DICOM images to  [Analyze][] and [MetaIO][] formats. It allows for stacking of 3D and 4D images.
+[Source](/~hari/files/code/dicomConvert.v0.1.zip)
 
-
-[Mark Tags](/~hari/code/mark-tags.html)
-: This is a simple Qt application that allows (dicom/analyze) images to be annotated with points. Initial goal was to mark tags in tagged cardiac MR images. 	
+[Mark Tags](/~hari/files/code/markTags.v0.2.zip)
+: The markTags program is a Graphical User Interface (GUI) written in C++ using the [Qt][] library. The programs allows the user to load 3D and 2D+time datasets and mark and manipulate landmarks. The image formats currently supported are [Analyze][] and [MetaIO][]. Support for converting DICOM images into one of these formats is provided. The [DCMTK][dcmtk] library is used for this purpose. 
+<img class='inset right' src='/~hari/images/markTagsLmarks.png' title='markTags' alt='mt' width='500px' /> 
+The code has been tested on Linux, Windows and Mac OS X. The Qt and DCMTK libraries need to be installed prior to installing markTags. The version requirements for these libraries are, [Qt][] > 4.x, [DCMTK][dcmtk] > 3.5.x. [Source](/~hari/files/code/markTags.v0.2.zip), [Matlab script](/~hari/files/code/readLandmarks.m) to load landmarks.
 
 </div>
 
 [Dendro]: http://www.cc.gatech.edu/csela/dendro/html/index.html
 [petsc]: http://www.mcs.anl.gov/petsc/
+[Qt]: http://qt-project.org/
+[dcmtk]: http://dicom.offis.de/dcmtk.php.en
+[Analyze]: http://www.grahamwideman.com/gw/brain/analyze/formatdoc.htm
+[MetaIO]: http://www.itk.org/Wiki/ITK/MetaIO
