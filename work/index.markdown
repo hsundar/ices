@@ -21,7 +21,7 @@ _Related talks & posts_
 {% for post in site.tags.octree %}
 <ul class="compact recent">
 <li>
-	<a href="/~hari/{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }}</a>
+	<a href="/~hari/{{ post.url }}">{{ post.title }}</a>
 	<span class="date">{{ post.date | date_to_string }}</span> 
 </li>
 </ul>
@@ -40,7 +40,7 @@ _Related talks & posts_
 {% for post in site.tags.multigrid %}
 <ul class="compact recent">
 <li>
-	<a href="/~hari/{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }}</a>
+	<a href="/~hari/{{ post.url }}">{{ post.title }}</a>
 	<span class="date">{{ post.date | date_to_string }}</span> 
 </li>
 </ul>
@@ -52,7 +52,10 @@ _Related talks & posts_
 Sorting
 =======
 
-Sorting is one of the most fundamental algorithms in computer science. It is also an essential building block for developing scalable parallel algorithms.
+Although comparison-based sorting is a well studied subject, there are practical issues related to its scalability at large core counts. Specifically scalability of existing approaches deteriorates as the number of processes becomes larger than the average number of records on a process. Sorting is also an enabling algorithm for parallelization as several problems can be addressed by using an efficient parallel sort as a building block. An example of this is the previously mentioned octree construction and 2:1 balance refinement, both of which can be implemented as process-local operations and distributed sorts. In [ICS-13](/~hari/files/pubs/ics13.pdf), we presented a new in-RAM sorting algorithm, HykSort, where we sustained an in-RAM sort throughput of 54TB/min on 262,144 cores of the CRAY XK7 \emph{Titan} platform at the Oak Ridge National Laboratory. Such a high throughput was achieved by avoiding $\mathcal{O}(p)$-collective communication primitives, ensuring better load balancing and using a staged-communication pattern to avoid network congestion. Given the rate at which data has been growing, the imbalance between what we can fit in memory, and the amount of data we wish to process is only going to increase for the foreseeable future. In [SC13](/~hari/files/pubs/sc13.pdf), we extended our algorithm to perform out-of-core sorting. By clever use of available storage and a formulation of asynchronous data transfer mechanisms, we are able to almost completely hide the computation (sorting) behind the IO latency. This latency hiding enables us to achieve comparable execution times, including the additional temporary IO required, between a large sort problem (5TB) run as a single, in-RAM sort and our out-of-core approach using 1/10th the amount of RAM. In our largest run, sorting 100TB of records using 1792 hosts, we achieved an end-to-end throughput of 1.24TB/min using our general-purpose sorter, improving on the current Daytona record holder by 65\%. We demonstrated sustained throughput on three of the fastest supercomputers in the world --- **Titan** at the Oak Ridge National Laboratory, **Stampede** at the Texas Advanced Computing Center and **Blue Waters** at the University of Illinois at Urbana-Champaign. As the developed out-of-core method tests and stresses nearly all components of modern supercomputing architectures (global IO, local IO, interconnect, local compute performance, etc) we also plan to package the entire process (data delivery plus sort) for use as a standalone, system-level benchmark.  
+
+
+
 
 =--
 
@@ -65,13 +68,6 @@ __Relative Neighborhood Graphs__ We present a parallel algorithm for computing c
 
 __Graph Coloring__ is a form of graph labeling, wherein we wish to label(color) vertices such that no two adjacent vertices have the same color. It is of interest to my research due to its use in parallelization of algorithms such as the [Gauß-Seidel method](http://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method).
 I have a simple 2D [javascript demo](/~hari/code/coloring) exploring coloring issues on quadtrees. 
-
-=--
-
-+-- {.section}
-Imaging
-=======
-All the imaging stuff. __Mutual information__, __Mellin Stuff__, __2d3d Registration__
 
 =--
 

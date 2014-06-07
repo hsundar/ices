@@ -17,14 +17,14 @@ Parallel
 [Dendro][]
 : A C++ library for constructing and balancing octrees in parallel. It also generates hexahedral meshes from the octrees and extends [PETSc][petsc]'s distributed array framework to support octree-based meshing. Basic routines for solving PDEs on such meshes using the finite element method are also provided. 
 
-[ParSort](/code/sort)
-: A scalable parallel sorting code that scales to millions of cores. The code is highly tuned and provides parallelism using MPI, OpenMP and SIMD vectorization.
+[HykSort](/~hari/files/code/hykSort-1.0.tgz)
+: Highly scalable distributed sorting and selection library. The package implements BitonicSort, MergeSort, SampleSort and HykSort. The code is highly tuned and provides parallelism using MPI, OpenMP and SIMD vectorization. 
 </div>	
 
 <div class="section" markdown="1">
 Matlab
 ========	
-[High-order Multigrid](/~hari/code/homg)
+[High-order Multigrid](http://hsundar.github.io/homg/)
 : A geometric multigrid framework built using Matlab that supports high-order discretizations on 2D/3D hexahedral meshes. 
 
 [Cardiac Electrophysiology](/~hari/code/ep)

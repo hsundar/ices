@@ -28,6 +28,12 @@ Hari Sundar, Rahul S Sampath, [George Biros][biros], SIAM J. Scientific Computin
 <div class="section" markdown="1">
 Conference Papers
 =================
+_[Algorithms for High-Throughput Disk-to-Disk Sorting][sc13]{:.pdf :}_
+Hari Sundar, Dhairya Malhotra, Karl Schulz, SuperComputing **2013**.
+
+_[HykSort: a new variant of hypercube quicksort on distributed memory architectures][ics13]{:pdf :}_
+Hari Sundar, Dhairya Malhotra, [George Biros][biros], International Conference on Supercomputing **2013**
+
 _[Parallel Geometric-Algebraic Multigrid on Unstructured Forests of Octrees][sc12]{:.pdf :}_
 Hari Sundar, [George Biros][biros], Carsten Burstedde, Johann Rudi, [Omar Ghattas][omar], [Georg Stadler][stadler], SuperComputing **2012**.
 
@@ -81,6 +87,9 @@ Philadelphia, PA.
 [sc08]: /~hari/files/pubs/sc08.pdf
 [sc10]: /~hari/files/pubs/sc10.pdf
 [sc12]: /~hari/files/pubs/sc12.pdf
+[sc13]: /~hari/files/pubs/sc13.pdf
+
+[ics13]: /~hari/files/pubs/ics13.pdf  
 
 [cvpr10]: /~hari/files/pubs/cvpr10.pdf
 
